@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#panel{
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#panel-top{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(101, 100, 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.elem .box{
+    padding: 5px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.elem .box h4{
+    color: black;
+}
+
+#panel-bottom{
+    width: 100%;
+    height: calc(100% - 70px);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#panel-bottom h1{
+    color: black;
+}
+.bubble{
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(rgb(101, 100, 100),black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bubble:hover{
+    background: radial-gradient(black,black);
+    cursor: pointer;
+}
